@@ -9,7 +9,7 @@ const deleteProductByIdService = async (req, Product) => {
       product.imageUrl.forEach((imgUrl) => {
         console.log("imgUrl", imgUrl);
         const filename = imgUrl.replace(
-          "http://localhost:4000/api/v1/getimage/",
+          "https://ecommarce-backend-production.up.railway.app/api/v1/getimage/",
           ""
         );
         console.log("filename", filename);

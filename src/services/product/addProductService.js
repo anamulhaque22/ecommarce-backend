@@ -7,7 +7,7 @@ const addProductService = async (req, dataModel) => {
   if (req.files.length > 0) {
     req.files.forEach((file) => {
       const { filename } = file;
-      imageUrl.push(`https://ecommarce-backend.vercel.app/v1/getimage/` + filename);
+      imageUrl.push(`https://ecommarce-backend-production.up.railway.app/api/v1/getimage/` + filename);
     });
     product.imageUrl = imageUrl;
     const newProduct = new dataModel(product);
