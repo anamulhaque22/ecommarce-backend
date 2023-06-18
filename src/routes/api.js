@@ -42,8 +42,8 @@ router.post(
   addProductValidatorHalper,
   addProduct
 );
-router.get("/getproducts", authVerifyMiddleware, getProducts);
-router.get("/getproduct/:id", authVerifyMiddleware, getProductById);
+router.get("/getproducts", getProducts);
+router.get("/getproduct/:id", getProductById);
 router.get("/getimage/:filename", getProductImage);
 router.get("/deleteproduct/:id", authVerifyMiddleware, deleteProductById);
 router.post("/updateproduct/:id", authVerifyMiddleware, updateProductById);
